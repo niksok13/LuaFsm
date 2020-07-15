@@ -1,3 +1,4 @@
+```
 Class = require "modules.Class"
 FSM = require "modules.FSM"
 State = FSM.State
@@ -28,3 +29,4 @@ Loader = Class(State){
 }
 FSM.add(Loader)
 FSM.change("loader")
+```
