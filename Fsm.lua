@@ -4,7 +4,7 @@ local State = Class(){
 	end
 }
 
-local Fsm = { states = {}}
+local Fsm = { states = {},State = State}
 
 function Fsm.add(state)
 	if state and type(state) ~= "table" then
@@ -58,4 +58,4 @@ function Fsm.event(ev, ...)
 	end
 end
 
-return Fsm, State
+return Fsm
